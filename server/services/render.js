@@ -4,6 +4,10 @@ exports.homeRoutes = (req,res)=>{
     res.render('index');
 }
 
+exports.musicRoutes = (req,res)=>{
+    res.render('music');
+}
+
 exports.NaniRoutes = (req,res)=>{
     res.render('nani');
 }

@@ -15,7 +15,7 @@ const PORT = process.env.PORT||8080
 app.use(morgan('tiny'));
 //connect database
 
-connectDB();
+// connectDB();
 
 // parse request to body-parser
 app.use(bodyparser.urlencoded({extended:true}));
