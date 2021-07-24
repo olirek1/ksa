@@ -16,8 +16,8 @@ exports.DeejalRoutes = (req,res)=>{
     res.render('deejal')
 }
 
-exports.consultRoutes = (req,res)=>{
-    res.render('consultancy');
+exports.photoRoutes = (req,res)=>{
+    res.render('photos');
 }
 
 exports.contactRoutes = (req,res)=>{

@@ -213,6 +213,8 @@ button a{
 
 .musicmain{
     margin-top: 100px;
+    height: 100vh;
+    align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,6 +231,7 @@ button a{
 
 .container .card{
     position: relative;
+    border-radius: 5px;
     max-width: 300px;
     height:215px;
     background: #fff;
@@ -248,7 +251,7 @@ button a{
     position: relative;
     width:260px;
     height:260px;
-    top: -60px;
+    top: -40px;
     z-index: 1;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
@@ -406,6 +409,7 @@ box-shadow: 0 10px 36px rgba(0,0,0,.15);
 }
 
 .copyrightText{
+    margin-top:10px;
     padding: 8px 40px;
     border-top: 1px solid rgba(0,0,0,0.1);
     text-align: center;
@@ -451,6 +455,126 @@ header .navigation.open{
     width: 40%;
     float: right;
 }
+/* styling social media */
+
+.social{
+    text-align: center;
+}
+
+.social .socialButton{
+    display: inline-block;
+    height:60px;
+    width:60px;
+    margin: 0px 5px;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+}
+.social .socialButton:hover{
+    width: 200px;
+}
+
+.social .socialButton a{
+    color: inherit; 
+} 
+
+.social .socialButton .icon{
+    float: left;
+    display: inline-block;
+    height:60px;
+    border-radius: 50px;
+    text-align: center;
+    width:60px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.social .socialButton .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.social .socialButton:hover .icon i{
+    color: #fff;
+}
+.social .socialButton span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.social .socialButton span a{
+    color: inherit;
+}
+
+.social .socialButton:nth-child(1):hover .icon{
+    background: #4267B2;
+}
+.social .socialButton:nth-child(2):hover .icon{
+    background: #1DA1F2;
+}
+.social .socialButton:nth-child(3):hover .icon{
+    background: #E1306C;
+}
+.social .socialButton:nth-child(4):hover .icon{
+    background: #FF0000;
+}
+
+.social .socialButton:nth-child(1) span{
+    color: #4267B2;
+}
+.social .socialButton:nth-child(2) span{
+    color: #1DA1F2;
+}
+.social .socialButton:nth-child(3) span{
+    color: #E1306C;
+}
+.social .socialButton:nth-child(4) span{
+    color: #FF0000;
+}
+/* swiper image */
+.swiper-img{
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 
 
@@ -569,6 +693,12 @@ header .navigation.open{
     .col-1 h2{
         font-size: 30px;
     }
+    .social .socialButton{
+        transition: none;
+    }
+    .social .socialButton:hover{
+        width: 60px;
+    }
 }
 .blog-slider {
     width: 95%;
@@ -579,7 +709,6 @@ header .navigation.open{
     box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
     padding: 25px;
     border-radius: 25px;
-    height: 600px;
     transition: all 0.3s;
 }
 @media screen and (max-width: 992px) {

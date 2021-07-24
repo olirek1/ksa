@@ -11,7 +11,7 @@ route.get('/nani-song',services.NaniRoutes)
 
 route.get('/deejal-gaadi',services.DeejalRoutes)
 
-route.get('/consultancy',services.consultRoutes)
+route.get('/photos',services.photoRoutes)
 
 route.get('/contact',services.contactRoutes)
 
